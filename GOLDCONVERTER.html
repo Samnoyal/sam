@@ -1,0 +1,65 @@
+<html>
+<title>Gold converter</title>
+<body>
+
+<style>
+body{
+background-image: url("goldc.jpg");
+background-size:cover;
+}
+</style>
+
+<body>
+<b>
+<font size="7" color="marine" face="Algerian">
+<h1><u><center>GOLD Converter</center></u></h1><br>
+</b>
+</font>
+</body>
+
+<center>
+<b><font size="6" color="red" style="casteller"><u>Gold Quantity convert into Currency:</u></font></b><br><br> <br>
+<input id="inputGolds" type="number" placeholder="Gold Quantity" oninput="currencyconverter(this.value)" onchange="currencyconverter(this.value)">
+<font size="5" color="darkblue" face="casteller"><b><u>
+<p>Currency:
+</font></b></u>
+<span id="outputCurrency"></span></p><p>
+
+<script>
+function currencyconverter(valNum)
+{
+document.getElementById("outputCurrency").innerHTML=valNum*3175.60;
+}
+</script>
+</center>
+
+
+<center>
+<b><font size="6" color="voilet" style="casteller"><u>Gold Quantity convert into Currency:</u></font></b><br><br> <br>
+<input id="inputCurrency" type="number" placeholder="Currency value" oninput="goldconverter(this.value)" onchange="goldconverter(this.value)">
+<font size="5" color="green" face="casteller"><b><u>
+<p>Gold:
+</font></b></u>
+<span id="outputGold"></span></p><p>
+
+<script>
+function goldconverter(valNum)
+{
+document.getElementById("outputGold").innerHTML=valNum/3175;
+}
+</script>
+</center>
+
+<br><br><br><br><br><br><br>
+<b><font size="4" color="rose">
+<font size="4" color="blue">
+<dt><b><u>USER GUIDE:</u></b></dt>
+</font>
+<dt><b><u>Quantity convert to Gold:</u></b></dt>
+<dd> This column is tell Gold value in currency.If you enter the Quantity.It will convert the Gold Quantity into Money. <br></dd>
+<dt><b><u>Currency convert to Gold:</u></b></dt>
+<dd> This column is tell Currency value in Gold.If you enter the Gold Quantity.It will convert Money into Gold Quantity. <br><</dd>
+</font></b>
+
+</body>
+</html>
